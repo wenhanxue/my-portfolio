@@ -81,7 +81,7 @@ img {
     max-width: 100%;
 }
 
-.projects {
+/* .projects {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
 }
@@ -92,9 +92,9 @@ img {
     padding: 0.5em;
 }
 
-.projects article h2 {
+.projects article h3 {
     margin: 0;
-}
+} */
 
 h1 {
     font-size: 400%;

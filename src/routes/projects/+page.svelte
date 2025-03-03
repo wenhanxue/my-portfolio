@@ -1,8 +1,14 @@
+<script>
+    import projects from "$lib/projects.json";
+    import Project from "$lib/Project.svelte";
+</script>
+
 <svelte:head>
   <title>Projects</title>
 </svelte:head>
+<!-- <pre>{ JSON.stringify(projects, null, "\t") }</pre> -->
 
-<h1>Projects</h1>
+<h1>{ projects.length } Projects</h1>
     <!-- <nav>
         <ul>
             <li><a href="../index.html">Home</a></li>
@@ -13,12 +19,16 @@
         </ul>
     </nav> -->
     <div class="projects">
-        <article>
-            <h2><a href="assignments/a2/A2_report.html">A2</a></h2>
-            <img src="https://vis-society.github.io/labs/2/images/empty.svg" alt="">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil quae eum non suscipit dicta officia qui placeat odit harum pariatur. Ab, tempora ipsa! Minus qui repudiandae molestias accusantium animi? Vel!</p>
-        </article>
-        <article>
+        {#each projects as p}
+            <Project data={p} />
+
+            <!-- <article>
+                <h2><a href="assignments/a2/A2_report.html">{p.title}</a></h2>
+                <img src={p.image} alt="">
+                <p>{p.description}</p>
+            </article> -->
+        {/each}
+        <!-- <article>
             <h2><a href="assignments/a3/A3_report.html">A3</a></h2>
             <img src="https://vis-society.github.io/labs/2/images/empty.svg" alt="">
             <p>Consequuntur impedit dolore optio voluptatum, quia culpa reiciendis. Dicta, rerum quisquam itaque assumenda optio in. Illum explicabo mollitia dolorem exercitationem, provident ab sit expedita, itaque dolore beatae quasi quae. Repellendus?</p>
@@ -72,5 +82,5 @@
             <h2>Obcaecati praesentium sed aperiam.</h2>
             <img src="https://vis-society.github.io/labs/2/images/empty.svg" alt="">
             <p>Officiis dolores eius magni dolor veritatis nobis corrupti, magnam voluptas dicta quibusdam delectus at impedit. Eligendi ab molestiae a, qui dolore quidem provident numquam consectetur distinctio laudantium ex libero. Fugit!</p>
-        </article>
+        </article> -->
     </div>
