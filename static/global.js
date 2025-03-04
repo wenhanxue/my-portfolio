@@ -10,9 +10,9 @@ function $$ (selector, context = document) {
 
 let pages = [
 	{url: "./", title: "Home"},
-	{url: "projects", title: "Projects"},
-    {url: "cv", title: "CV"},
-    {url: "contact", title: "Contact"},
+	{url: "/projects", title: "Projects"},
+    {url: "/cv", title: "CV"},
+    {url: "/contact", title: "Contact"},
     {url: "https://github.com/wenhanxue", title: "Github"}
 ];
 
