@@ -81,12 +81,12 @@ img {
     max-width: 100%;
 }
 
-/* .projects {
+.projects {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
 }
 
-.projects article {
+/*.projects article {
     grid-template-rows: subgrid;
     grid-row: span 3;
     padding: 0.5em;
