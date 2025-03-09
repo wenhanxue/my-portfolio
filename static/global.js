@@ -8,13 +8,13 @@ function $$ (selector, context = document) {
 // let currentLink = navLinks.find(a => a.host === location.host && a.pathname === location.pathname)
 // currentLink?.classList.add("current");
 
-let pages = [
-	{url: "./", title: "Home"},
-	{url: "/projects", title: "Projects"},
-    {url: "/cv", title: "CV"},
-    {url: "/contact", title: "Contact"},
-    {url: "https://github.com/wenhanxue", title: "Github"}
-];
+// let pages = [
+// 	{url: "./", title: "Home"},
+// 	{url: "/projects", title: "Projects"},
+//     {url: "/cv", title: "CV"},
+//     {url: "/contact", title: "Contact"},
+//     {url: "https://github.com/wenhanxue", title: "Github"}
+// ];
 
 let nav = document.createElement("nav");
 document.body.prepend(nav);
