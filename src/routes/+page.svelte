@@ -18,7 +18,7 @@
         </ul>
     </nav> -->
     <p>hi</p>
-    <img src="image/cat.jpg" alt="picture of my cat in the kitchen staring up into the camera">
+    <!-- <img src="image/cat.jpg" alt="picture of my cat in the kitchen staring up into the camera"> -->
     <h2>
         Latest Projects
     </h2>
