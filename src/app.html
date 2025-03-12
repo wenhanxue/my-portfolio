@@ -13,3 +13,24 @@
 		<div style="display: contents">%sveltekit.body%</div>
 	</body>
 </html>
+
+<style>
+	/* In App.svelte or a global.css file */
+:root {
+  --color-accent: oklch(65% 50% 0);
+  --border-color: oklch(50% 10% 200 / 40%);
+  --background-color: oklch(100% 0 0); /* Light background */
+  --text-color: oklch(0% 0 0); /* Light text */
+  --dt-color: oklch(0% 0 0); /* Light theme <dt> text color */
+  --dd-color: oklch(0% 0 0); /* Light theme <dd> text color */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: oklch(20% 0 0); /* Dark background */
+    --text-color: oklch(100% 0 0); /* Dark text */
+    --dt-color: oklch(100% 0 0); /* Dark theme <dt> text color */
+    --dd-color: oklch(100% 0 0); /* Dark theme <dd> text color */
+  }
+}
+</style>
