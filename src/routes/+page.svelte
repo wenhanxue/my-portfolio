@@ -27,7 +27,7 @@
     {:then response} {#await response.json()}
     <p>Decoding...</p>
     {:then data}
-    <section>
+    <section class="github">
         <h2>My GitHub Stats</h2>
         <dl>
           <dt>Followers:</dt>
@@ -47,37 +47,37 @@
 
 <style>
     dl {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto auto;
-    gap: 10px;
-    background-color: var(--background-color);
-    color: var(--text-color);
-    padding: 1em;
-    border-radius: 8px;
-    border: 1px solid var(--border-color);
-  }
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto auto;
+        gap: 10px;
+        /* background-color: var(--background-color);
+        color: var(--text-color); */
+        padding: 1em;
+        border-radius: 8px;
+        border: 1px solid;
+    }
 
   dt {
     grid-row: 1;
     font-weight: bold;
-    color: var(--dt-color);
+    /* color: var(--dt-color); */
   }
 
   dd {
     grid-row: 2;
     margin: 0;
-    color: var(--dd-color);
+    /* color: var(--dd-color); */
   }
 
     /* Optional: Add some styling for the section and error messages */
-    section {
-    margin: 10px;
-    padding: 15px;
-    border: 2px dashed var(--border-color);
-    background-color: var(--background-color);
-    color: var(--text-color);
-  }
+    .github {
+        margin: 10px;
+        padding: 15px;
+        border: 2px dashed;
+        /* background-color: var(--background-color);
+        color: var(--text-color); */
+    }
 
     .error {
     color: red;

@@ -95,11 +95,11 @@
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(8em, 1fr)); /* Responsive grid layout */
         gap: 1rem; /* Spacing between grid items */
-        border: 2px solid black; /* Border to distinguish the legend */
+        border: 1px solid; /* Border to distinguish the legend */
         padding: 1rem; /* Spacing inside the legend container */
         margin: 0; /* Spacing outside the legend container */
         list-style: none; /* Remove default list bullets */
-        background-color: rgb(56, 55, 55);
+        /* background-color: rgb(56, 55, 55); */
     }
 
     /* Styling the list items */
