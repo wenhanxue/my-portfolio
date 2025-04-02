@@ -1,7 +1,6 @@
 {
 	"build": "vite build",
-	"prebuild": "npx elocuent -d static,src -o static/loc.csv",	
-
+	"prebuild": "npx elocuent -d static,src -o static/loc.csv",
 	"name": "my-portfolio",
 	"version": "0.0.1",
 	"private": true,
@@ -20,6 +19,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@floating-ui/dom": "^1.6.13",
 		"d3": "^7.9.0"
 	}
 }
